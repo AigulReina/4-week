@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Lato&family=Libre+Baskerville&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel=" shortcut icon" href="img/free-icon-staircase-2984892.png" type="image/svg+xml">
+    <title>marta/benet</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 300px;
+            background: url(img/backgroundinterior.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            position: relative;
+        }
+
+        .logo {
+            width: 500px;
+            height: 70px;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            align-items: center;
+        }
+
+        h1 {
+            position: absolute;
+            width: 700px;
+            height: 340px;
+            left: 64px;
+            top: 620px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 80px;
+
+
+            color: #000000;
+        }
+
+        .content {
+            padding: 500px;
+            color: #000;
+            margin-left: -330px;
+            font-family: 'Cardo';
+            font-style: normal;
+        }
+
+        .rectangle {
+            box-sizing: border-box;
+            position: absolute;
+            width: 175px;
+            height: 25px;
+            left: 64px;
+            top: 1000px;
+            border: 1px solid #000000;
+            border-radius: 9999px;
+            text-align: center;
+        }
+
+        .rectangle:hover {
+            background-color: #f3e0b1;
+        }
+
+        .image-container {
+            display: flex;
+        }
+
+        .image1 {
+            position: absolute;
+            object-fit: cover;
+            position: absolute;
+            width: 400px;
+            height: 376px;
+            left: 64px;
+            top: 1220px;
+            border-radius: 0px;
+        }
+
+        .image2 {
+            position: absolute;
+            width: 405px;
+            height: 481px;
+            left: 540px;
+            top: 1050px;
+            border-radius: 0px;
+        }
+
+        .image3 {
+            position: absolute;
+            width: 405px;
+            height: 481px;
+            left: 1000px;
+            top: 1050px;
+            border-radius: 0px;
+        }
+
+        .text-container {
+            margin-top: 600px;
+            position: absolute;
+            height: 50px;
+            left: 64px;
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #000000
+        }
+
+        .rectangle2 {
+            position: absolute;
+            box-sizing: border-box;
+            width: 116px;
+            height: 25px;
+            left: 69px;
+            top: 1850px;
+
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 25px;
+            border: 1px solid #000000;
+            border-radius: 9999px;
+            text-align: center;
+            text-transform: lowercase;
+            color: #000000
+        }
+
+        .rectangle2:hover {
+            background-color: #f3e0b1;
+        }
+
+        h2 {
+            position: absolute;
+            width: 299px;
+            height: 80px;
+            left: 610px;
+            top: 2030px;
+
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            color: #000000
+        }
+
+        .image4 {
+            position: absolute;
+            width: 280px;
+            height: 300px;
+            left: 100px;
+            top: 2200px;
+            border-radius: 0px
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            width: 212px;
+            height: 80px;
+            left: 650px;
+            top: 2374px
+        }
+
+        .item {
+            font-size: 52px;
+            margin-bottom: 10px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 52px;
+            line-height: 40px;
+            text-align: center;
+            color: #000000
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .image5 {
+            position: absolute;
+            width: 275px;
+            height: 300px;
+            left: 1200px;
+            top: 2410px;
+            border-radius: 0px;
+        }
+
+        .rectangle3 {
+            position: absolute;
+            box-sizing: border-box;
+            width: 119px;
+            height: 25px;
+            left: 710px;
+            top: 2800px;
+
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            border: 1px solid #000000;
+            border-radius: 9999px;
+            text-align: center;
+            text-transform: lowercase;
+            color: #000000;
+        }
+
+        .rectangle3:hover {
+            background-color: #f3e0b1;
+        }
+
+        .centered-text {
+            position: absolute;
+            width: 345px;
+            height: 80px;
+            left: 600px;
+            top: 2950px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 41px;
+            line-height: 45px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .text-container2 {
+            position: absolute;
+            width: 1200px;
+            height: 100px;
+            left: 176px;
+            top: 3050px;
+
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .image-container2 {
+            position: absolute;
+            width: 400px;
+            height: 406px;
+            left: 20px;
+            top: 100px;
+            border-radius: 0px;
+        }
+
+        .image-caption1 {
+            position: absolute;
+            width: 180px;
+            height: 32px;
+            left: 64px;
+            top: 395px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #000000;
+        }
+
+        .image-container22 {
+            position: absolute;
+            width: 395px;
+            height: 406px;
+            left: 429px;
+            top: 100px;
+            border-radius: 0px;
+        }
+
+        .image-caption2 {
+            position: absolute;
+            width: 55px;
+            height: 32px;
+            left: 65px;
+            top: 395px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 32px;
+            color: #000000;
+        }
+
+        .image-container33 {
+            position: absolute;
+            width: 341px;
+            height: 406px;
+            left: 860px;
+            top: 100px;
+            border-radius: 0px;
+        }
+
+        .image-caption3 {
+            position: absolute;
+            width: 151px;
+            height: 32px;
+            left: 40px;
+            top: 395px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #000000;
+        }
+
+        .centered-text2 {
+            position: absolute;
+            width: 552px;
+            height: 55px;
+            left: 500px;
+            top: 3690px;
+
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .rectangle4 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 140px;
+            height: 35px;
+            left: 700px;
+            top: 3780px;
+
+            border: 1px solid #000000;
+            border-radius: 9999px;
+            position: absolute;
+            width: 150px;
+            height: 30px;
+            left: 700px;
+            top: 3780px;
+
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 25px;
+            text-align: center;
+            text-transform: lowercase;
+            color: #000000;
+        }
+
+        .rectangle4:hover {
+            background-color: #f3e0b1;
+        }
+
+        footer {
+            position: absolute;
+            width: 1575px;
+            height: 100px;
+            left: 0px;
+            top: 3900px;
+            background-color: rgb(247, 245, 245);
+
+        }
+
+        .footer-link1 {
+            position: absolute;
+            width: 150px;
+            height: 24px;
+            left: 64px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 560;
+            font-size: 17px;
+            line-height: 25px;
+            text-transform: uppercase;
+
+        }
+
+        .footer-link2 {
+            position: absolute;
+            width: 150px;
+            height: 24px;
+            left: 500px;
+            text-align: center;
+
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 17px;
+            line-height: 25px;
+            text-transform: uppercase;
+        }
+
+        .footer-link3 {
+            position: absolute;
+            width: 150px;
+            height: 24px;
+            left: 890px;
+
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 25px;
+            text-transform: uppercase;
+        }
+
+        .footer-link4 {
+            position: absolute;
+            width: 150px;
+            height: 24px;
+            left: 1350px;
+
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+
+        .footer-text {
+            position: absolute;
+            width: 433px;
+            height: 24px;
+            left: 64px;
+            top: 50px;
+
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+
+        .footer-text2 {
+            position: absolute;
+            width: 200px;
+            height: 24px;
+            left: 1340px;
+            top: 50px;
+
+            font-family: 'Cardo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 25px;
+            /* identical to box height, or 150% */
+
+            text-align: right;
+
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/Frame.png" alt="Логотип">
+        </div>
+        </div>
+        <nav class="top-menu">
+            <ul class="menu-main">
+                <li class="left-item">
+                    <a href="http://127.0.0.1:5500/testsite/indexlayoutfigma.html">About</a>
+                </li>
+                <li class="left-item"><a href="http://127.0.0.1:5500/testsite/indexlayoutfigma.html">manifesto</a>
+                </li>
+                <li class="left-item"><a href="http://127.0.0.1:5500/testsite/indexlayoutfigma.html">projects</a>
+                </li>
+                <li class="right-item"><a href="http://127.0.0.1:5500/testsite/indexlayoutfigma.html">Cart</a>
+                </li>
+                <li class="right-item"><a href="http://127.0.0.1:5500/testsite/indexlayoutfigma.html">Contact</a>
+                </li>
+                <li class="right-item"><a href="http://127.0.0.1:5500/testsite/indexlayoutfigma.html">Shop</a>
+                <li class="right-item"><a href="http://127.0.0.1:5500/testsite/indexlayoutfigma.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        .top-menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(34, 34, 34, );
+            z-index: 9999;
+        }
+
+        .menu-main {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato';
+            font-style: normal;
+        }
+
+        .menu-main:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .left-item {
+            float: left;
+
+        }
+
+        .right-item {
+            float: right;
+        }
+
+        .menu-main a {
+            text-decoration: none;
+            display: block;
+            line-height: 90px;
+            padding: 20px;
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-family: 'Lato', sans-serif, 'Libre Baskerville', serif, 'Roboto Slab', serif;
+        }
+
+        .menu-main a {
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            transition: .3s linear;
+        }
+
+        .menu-main a:hover {
+            background: rgba(0, 0, 0, );
+        }
+
+        .menu-main {
+            padding-top: 0px;
+            text-align: center;
+        }
+    </style>
+    <section>
+        <h1>Contemporary craft and interiors with a mediterranean soul</h1>
+        <div class="content">
+            <div class="rectangle" onclick="//127.0.0.1:5500/indexlayoutfigma.html">
+                Discover artifacts
+            </div>
+            <div class="image-container">
+                <img src="img/IMAGE.png" alt="Картинка 1" class="image1">
+                <img src="img/imagenumber2.png" alt="Картинка 2" class="image2">
+                <img src="img/imagenumber3.png" alt="Картинка 3" class="image3">
+                <img src="img/image4.png" alt="картинка 4" class="image4">
+            </div>
+            <div class="text-container">
+                <p>
+                    I’m a Spanish artisan, designer and architect based in Italy. My work is based on the application of
+                    craftsmanship in objects and spaces design with a contemporary approach.
+                </p>
+                <p>
+                    Influenced by the Mediterranean traditions and culture of my hometown – Valencia – my work develops
+                    around ceramics and textiles. Each creation is the result of the union between design and
+                    craftsmanship and emphasizes the beauty of handmade things and their imperfections.
+                </p>
+            </div>
+            <div class="rectangle2" onclick="/127.0.0.1:5500/indexlayoutfigma.html">
+                More about me
+            </div>
+            <h2>
+                Here you can find the line of essential ceramics, all customizable products and a curated selection of
+                unique pieces
+            </h2>
+            <div class="container">
+                <p class="item">Artworks</p>
+                <p class="item">Courses</p>
+                <p class="item">Gift Card</p>
+                <p class="item">Homewear</p>
+                <p class="item">Tableware</p>
+            </div>
+            <div class="image-container">
+                <img src="img/imageyellow.png" alt="картинка 5" class="image5">
+            </div>
+            <div class="rectangle3" onclick="/127.0.0.1:5500/indexlayoutfigma.html">
+                Purchase
+            </div>
+            <p class="centered-text">Latest Projects</p>
+            <div class="text-container2">
+                <p> A selection of projects that are the result of experimentation with natural materials, attention to
+                    detail and craftsmanship techniques. Artwork, ceramics and clothing on commission, interior designs
+                    and custom furniture.</p>
+                <div class="image-container2">
+                    <img src="img/latestimage1.png" alt="Image 1">
+                    <p class="image-caption1">Ca Benet renovation /</p>
+                </div>
+                <div class="image-container22">
+                    <img src="img/latestimage2.png" alt="Image 2">
+                    <p class="image-caption2">Plecs /</p>
+                </div>
+                <div class="image-container33">
+                    <img src="img/latestimage3.png" alt="Image 3">
+                    <p class="image-caption3">Ca Benet interior /</p>
+                </div>
+            </div>
+            <p class="centered-text2">For further information about services, ask for a quote or an appointment</p>
+            <div class="rectangle4" onclick="/127.0.0.1:5500/indexlayoutfigma.html">
+                Contact me
+            </div>
+    </section>
+    <footer>
+        <p class="footer-link1"><a href="http://127.0.0.1:5500/indexlayoutfigma.html">Cookie Policy</a></p>
+        <p class="footer-link2"><a href="http://127.0.0.1:5500/indexlayoutfigma.html">Privacy Policy</a></p>
+        <p class="footer-link3"><a href="http://127.0.0.1:5500/indexlayoutfigma.html">Shipping</a></p>
+        <p class="footer-link4"><a href="http://127.0.0.1:5500/indexlayoutfigma.html">Instagram</a></p>
+        <p class="footer-text">
+            ©2023 Marta Benet. All rights reserved - P.Iva IT10087680962
+        </p>
+        <p class="footer-text2">
+            Crafted by Beconcept Studio
+        </p>
+    </footer>
+</body>
+
+</html>
